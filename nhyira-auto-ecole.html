@@ -1,0 +1,90 @@
+=<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHYIRA AUTO-ECOLE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0D1013;--bg-panel:rgba(255,255,255,0.05);--panel-border:rgba(255,255,255,0.10);--ink:#F3F1EC;--ink-soft:#A7ACB6;--ink-faint:#6C7178;--amber:#F0AE3C;--amber-deep:#D98F1F;--teal:#37B594;--line:rgba(255,255,255,0.10);}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+.display{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;letter-spacing:-0.02em;}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px;}
+.mesh{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;}
+.mesh span{position:absolute;border-radius:50%;filter:blur(90px);opacity:0.32;}
+.m1{width:520px;height:520px;background:var(--amber);top:-140px;left:-100px;animation:f1 26s ease-in-out infinite;}
+.m2{width:460px;height:460px;background:var(--teal);top:160px;right:-120px;animation:f2 32s ease-in-out infinite;}
+@keyframes f1{0%,100%{transform:translate(0,0)}50%{transform:translate(40px,50px)}}
+@keyframes f2{0%,100%{transform:translate(0,0)}50%{transform:translate(-40px,30px)}}
+main{position:relative;z-index:1;}
+header{position:sticky;top:0;z-index:30;backdrop-filter:blur(14px);background:rgba(13,16,19,0.72);border-bottom:1px solid var(--line);}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:18px 0;}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;}
+.logo-mark{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--amber),var(--teal));display:flex;align-items:center;justify-content:center;color:#0D1013;font-weight:800;font-size:15px;}
+.topbar-cta{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg);padding:10px 20px;border-radius:999px;font-size:14px;font-weight:600;text-decoration:none;}
+.hero{padding:90px 0 80px;}
+.kicker{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;color:var(--ink-soft);background:var(--bg-panel);border:1px solid var(--panel-border);padding:8px 14px;border-radius:999px;margin-bottom:24px;}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--teal);}
+h1{font-size:clamp(38px,6vw,66px);line-height:1.02;margin-bottom:22px;}
+.lede{font-size:18px;line-height:1.6;color:var(--ink-soft);max-width:52ch;margin-bottom:30px;}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:12px;font-size:15px;font-weight:600;text-decoration:none;}
+.btn-primary{background:linear-gradient(100deg,var(--amber),var(--amber-deep));color:#1A1200;}
+.btn-secondary{background:var(--bg-panel);color:var(--ink);border:1px solid var(--panel-border);}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;}
+.glass-card{background:var(--bg-panel);border:1px solid var(--panel-border);border-radius:20px;padding:30px;backdrop-filter:blur(20px);margin-top:36px;}
+.card-row{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+.card-item .label{font-size:12.5px;color:var(--ink-faint);margin-bottom:6px;}
+.card-item .value{font-size:16px;font-weight:600;}
+section{padding:60px 0;}
+.section-head h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:clamp(26px,4vw,36px);margin-bottom:16px;letter-spacing:-0.02em;}
+.section-head p{color:var(--ink-soft);font-size:16px;line-height:1.7;max-width:62ch;}
+.cta-box{position:relative;overflow:hidden;border-radius:28px;padding:56px 44px;background:linear-gradient(135deg,#0F2E27,#16352C 40%,#0D1013 100%);border:1px solid var(--panel-border);display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap;}
+.cta-box h2{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:clamp(24px,4vw,34px);margin-bottom:10px;}
+.cta-box p{color:#B7C4BF;font-size:15.5px;max-width:40ch;}
+.cta-buttons{display:flex;gap:14px;flex-wrap:wrap;}
+.btn-light{background:#F3F1EC;color:#0D1013;}
+.btn-outline-light{background:transparent;color:#F3F1EC;border:1px solid rgba(243,241,236,0.35);}
+footer{padding:32px 0 44px;color:var(--ink-faint);font-size:13.5px;text-align:center;}
+</style>
+</head>
+<body>
+<div class="mesh"><span class="m1"></span><span class="m2"></span></div>
+<header><div class="wrap topbar">
+<div class="logo"><span class="logo-mark">N</span> NHYIRA AUTO-ECOLE</div>
+<a class="topbar-cta" href="tel:+2250707353124">📞 Appeler</a>
+</div></header>
+<main>
+<section class="hero"><div class="wrap">
+<div class="kicker"><span class="dot"></span> 2 Plateaux 7e tranche</div>
+<h1 class="display">Un site à la hauteur de<br>NHYIRA AUTO-ECOLE</h1>
+<p class="lede">Site + inscription en ligne + planning des lecons. 103 avis a 4.9 et introuvable en ligne : un candidat au permis cherche sur Google avant d'appeler.</p>
+<div class="hero-actions">
+<a class="btn btn-primary" href="https://wa.me/2250707353124" target="_blank">Écrire sur WhatsApp</a>
+<a class="btn btn-secondary" href="tel:+2250707353124">Appeler directement</a>
+</div>
+<div class="glass-card"><div class="card-row">
+<div class="card-item"><div class="label">Secteur</div><div class="value">Auto-ecole</div></div>
+<div class="card-item"><div class="label">Avis Google</div><div class="value">4.9 / 103 avis</div></div>
+<div class="card-item"><div class="label">Présence actuelle</div><div class="value">Aucun site</div></div>
+</div></div>
+</div></section>
+<section><div class="wrap section-head">
+<h2>Pourquoi maintenant</h2>
+<p>Site + inscription en ligne + planning des lecons. 103 avis a 4.9 et introuvable en ligne : un candidat au permis cherche sur Google avant d'appeler.</p>
+</div></section>
+<section><div class="wrap">
+<div class="cta-box">
+<div><h2>Prêt à en discuter ?</h2><p>Écrivez-nous pour voir comment adapter ce projet à votre activité.</p></div>
+<div class="cta-buttons">
+<a class="btn btn-light" href="https://wa.me/2250707353124" target="_blank">WhatsApp</a>
+<a class="btn btn-outline-light" href="tel:+2250707353124">Appeler</a>
+</div>
+</div>
+</div></section>
+</main>
+<footer>NHYIRA AUTO-ECOLE — 2 Plateaux 7e tranche · +2250707353124</footer>
+</body>
+</html>
